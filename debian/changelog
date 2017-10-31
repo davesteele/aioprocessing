@@ -1,6 +1,5 @@
-aioprocessing (1.0.0-1) UNRELEASED; urgency=low
+aioprocessing (1.0.0-1) unstable; urgency=low
 
-  * Initial release. Closes: #nnnn
-    <nnnn is the bug number of your ITP>
+  * Initial release. Closes: #880440
 
- -- David Steele <steele@debian.org>  Mon, 30 Oct 2017 23:03:22 -0400
+ -- David Steele <steele@debian.org>  Tue, 31 Oct 2017 11:54:13 -0400

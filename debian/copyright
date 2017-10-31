@@ -1,97 +1,34 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: aioprocessing
-Source: <url://example.com>
-#
-# Please double check copyright with the licensecheck(1) command.
+Source: https://github.com/dano/aioprocessing
 
-Files:     .gitignore
-           .travis.yml
-           AUTHORS
-           MANIFEST.in
-           README.md
-           aioprocessing/.gitignore
-           aioprocessing/__init__.py
-           aioprocessing/connection.py
-           aioprocessing/executor.py
-           aioprocessing/locks.py
-           aioprocessing/managers.py
-           aioprocessing/pool.py
-           aioprocessing/process.py
-           aioprocessing/queues.py
-           aioprocessing/util.py
-           ez_setup.py
-           requirements.txt
-           runtests.py
-           setup.py
-           tester.py
-           tests/.gitignore
-           tests/__init__.py
-           tests/_base_test.py
-           tests/connection_tests.py
-           tests/lock_tests.py
-           tests/pickle_test.py
-           tests/pool_test.py
-           tests/process_test.py
-           tests/queue_test.py
-Copyright: __NO_COPYRIGHT_NOR_LICENSE__
-License:   __NO_COPYRIGHT_NOR_LICENSE__
+Files: *
+Copyright: 2014 Dan O'Reilly <oreilldf@gmail.com>
+License: BSD-2-Clause
 
-Files:     LICENSE.txt
-Copyright: 2014 Dan O'Reilly
-License:   BSD-2-Clause
+Files: debian/*
+Copyright: 2017 David Steele <steele@debian.org>
+License: BSD-2-Clause
+
+License: BSD-2-Clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
  .
- 1. Redistributions of source code must retain the above copyright notice, this
- list of conditions and the following disclaimer.
- 2. Redistributions in binary form must reproduce the above copyright notice,
- this list of conditions and the following disclaimer in the documentation
- and/or other materials provided with the distribution.
+ 1. Redistributions of source code must retain the above copyright notice, 
+    this list of conditions and the following disclaimer.
  .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
- ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- The views and conclusions contained in the software and documentation are those
- of the authors and should not be interpreted as representing official policies,
- either expressed or implied, of the FreeBSD Project.
-
-#----------------------------------------------------------------------------
-# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
-# license/copyright files.
-
-#----------------------------------------------------------------------------
-# License file: LICENSE.txt
- Copyright (c) 2014, Dan O'Reilly
- All rights reserved.
- .
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions are met:
- .
- 1. Redistributions of source code must retain the above copyright notice, this
-    list of conditions and the following disclaimer.
  2. Redistributions in binary form must reproduce the above copyright notice,
     this list of conditions and the following disclaimer in the documentation
-    and/or other materials provided with the distribution.
+     and/or other materials provided with the distribution.
  .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
- ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- .
- The views and conclusions contained in the software and documentation are those
- of the authors and should not be interpreted as representing official policies,
- either expressed or implied, of the FreeBSD Project.
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.

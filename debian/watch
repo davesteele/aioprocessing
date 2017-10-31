@@ -1,2 +1,5 @@
-# You must remove unused comment lines for the released package.
-version=3
+version=4
+
+opts=pgpmode=none \
+    https://pypi.python.org/pypi/aioprocessing/ \
+    https://pypi.python.org/packages/.+/aioprocessing-([\d\.]+).tar.gz#.* debian uupdate
