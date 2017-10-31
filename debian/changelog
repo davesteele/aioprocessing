@@ -1,0 +1,6 @@
+aioprocessing (1.0.0-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- David Steele <steele@debian.org>  Mon, 30 Oct 2017 23:03:22 -0400
