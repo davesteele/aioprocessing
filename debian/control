@@ -2,7 +2,7 @@ Source: aioprocessing
 Section: python
 Priority: optional
 Maintainer: David Steele <steele@debian.org>
-Build-Depends: debhelper (>=9), dh-python, python3-all, python3-setuptools
+Build-Depends: debhelper (>=10), dh-python, python3-all, python3-setuptools
 Standards-Version: 4.1.1
 Homepage: https://pypi.python.org/pypi/aioprocessing
 X-Python3-Version: >= 3.3
