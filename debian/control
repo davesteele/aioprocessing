@@ -10,7 +10,7 @@ X-Python3-Version: >= 3.3
 Package: python3-aioprocessing
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python3:Depends}
 Description: integrate the Python multiprocessing module with asyncio
  The aioprocessing module provides asynchronous, asyncio compatible,
  coroutine versions of many blocking instance methods on objects in
