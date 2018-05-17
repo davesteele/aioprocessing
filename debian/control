@@ -5,7 +5,6 @@ Maintainer: David Steele <steele@debian.org>
 Build-Depends: debhelper (>=10), dh-python, python3-all, python3-setuptools
 Standards-Version: 4.1.4.0
 Homepage: https://pypi.python.org/pypi/aioprocessing
-X-Python3-Version: >= 3.3
 Vcs-Git: https://github.com/davesteele/aioprocessing.git -b debian
 Vcs-Browser: https://github.com/davesteele/aioprocessing
 
