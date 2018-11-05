@@ -50,8 +50,8 @@ if __name__ == "__main__":
     lock = aioprocessing.AioLock()
     event = aioprocessing.AioEvent()
     tasks = [
-        asyncio.async(example(queue, event, lock)), 
-        asyncio.async(example2(queue, event, lock)),
+        asyncio.ensure_future(example(queue, event, lock)),
+        asyncio.ensure_future(example2(queue, event, lock)),
     ]
     loop.run_until_complete(asyncio.wait(tasks))
     loop.close()
