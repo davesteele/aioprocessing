@@ -1,1 +1,4 @@
 Tests: test.sh
+
+Tests: py.test-3
+Dependencies: @, @builddeps@
