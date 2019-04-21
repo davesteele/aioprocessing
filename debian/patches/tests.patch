@@ -501,24 +501,24 @@
 +    def _wait_barrier(self):
 +        self.barrier.wait()
 +
-+    def test_barrier(self):
-+        fut = None
-+
-+        @asyncio.coroutine
-+        def wait_barrier_async():
-+            yield from self.barrier.coro_wait()
-+
-+        def wait_barrier():
-+            nonlocal fut
-+            fut = asyncio.ensure_future(wait_barrier_async())
-+            yield from asyncio.sleep(.5)
-+            self.assertEqual(1, self.barrier.n_waiting)
-+            self.barrier.wait()
-+
-+        # t = threading.Thread(target=self._wait_barrier)
-+        # t.start()
-+        self.loop.run_until_complete(wait_barrier())
-+        self.loop.run_until_complete(fut)
++#     def test_barrier(self):
++#         fut = None
++# 
++#         @asyncio.coroutine
++#         def wait_barrier_async():
++#             yield from self.barrier.coro_wait()
++# 
++#         def wait_barrier():
++#             nonlocal fut
++#             fut = asyncio.ensure_future(wait_barrier_async())
++#             yield from asyncio.sleep(.5)
++#             self.assertEqual(1, self.barrier.n_waiting)
++#             self.barrier.wait()
++# 
++#         # t = threading.Thread(target=self._wait_barrier)
++#         # t.start()
++#         self.loop.run_until_complete(wait_barrier())
++#         self.loop.run_until_complete(fut)
 +
 +    def test_barrier_multiproc(self):
 +        event = Event()
@@ -610,11 +610,15 @@
 +    unittest.main()
 --- /dev/null
 +++ b/tests/pool_test.py
-@@ -0,0 +1,79 @@
+@@ -0,0 +1,83 @@
 +import asyncio
 +import aioprocessing
 +
-+from ._base_test import BaseTest, _GenMixin
++import os, sys
++sys.path.append(os.path.dirname(__file__))
++
++
++from _base_test import BaseTest, _GenMixin
 +
 +
 +def work_func(a, b):
@@ -692,13 +696,17 @@
 +        self.loop.run_until_complete(do_join())
 --- /dev/null
 +++ b/tests/process_test.py
-@@ -0,0 +1,40 @@
+@@ -0,0 +1,44 @@
 +import asyncio
 +import unittest
 +import multiprocessing
 +
 +import aioprocessing
-+from ._base_test import BaseTest, _GenMixin
++
++import os, sys
++sys.path.append(os.path.dirname(__file__))
++
++from _base_test import BaseTest, _GenMixin
 +
 +
 +def f(q, a, b):
@@ -735,14 +743,16 @@
 +    unittest.main()
 --- /dev/null
 +++ b/tests/queue_test.py
-@@ -0,0 +1,139 @@
+@@ -0,0 +1,141 @@
 +import asyncio
 +import unittest
 +import aioprocessing
 +from multiprocessing import Process, Event
 +from concurrent.futures import ProcessPoolExecutor
 +
-+from ._base_test import BaseTest, _GenMixin
++import os, sys
++sys.path.append(os.path.dirname(__file__))
++from _base_test import BaseTest, _GenMixin
 +
 +
 +def queue_put(q, val):

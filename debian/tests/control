@@ -1,4 +1,5 @@
 Tests: test.sh
 
-Tests: py.test-3
-Dependencies: @, @builddeps@
+Tests: pytest.sh
+Depends: @, @builddeps@
+Restrictions: build-needed
