@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: aioprocessing
 Source: https://github.com/dano/aioprocessing
+Upstream-Contact: Dan O'Reilly <<oreilldf@gmail.com>>
 
 Files: *
 Copyright: 2014 Dan O'Reilly <oreilldf@gmail.com>
