@@ -1,11 +1,12 @@
-aioprocessing (1.0.1-5) UNRELEASED; urgency=medium
+aioprocessing (1.0.1-5) unstable; urgency=medium
 
+  [ Debian Janitor ]
   * Set field Upstream-Contact in debian/copyright.
   * Set upstream metadata fields: Bug-Submit.
   * Remove obsolete fields Contact, Name from debian/upstream/metadata
     (already present in machine-readable debian/copyright).
 
- -- Debian Janitor <janitor@jelmer.uk>  Tue, 05 May 2020 04:31:39 +0000
+ -- David Steele <steele@debian.org>  Thu, 03 Dec 2020 09:21:20 -0500
 
 aioprocessing (1.0.1-4) unstable; urgency=medium
 
