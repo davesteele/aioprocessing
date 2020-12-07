@@ -1,3 +1,9 @@
+aioprocessing (1.1.0-2) unstable; urgency=medium
+
+  * Fix the autopkgtests for the new demo test code.
+
+ -- David Steele <steele@debian.org>  Mon, 07 Dec 2020 16:58:26 -0500
+
 aioprocessing (1.1.0-1) unstable; urgency=medium
 
   * New upstream version.
